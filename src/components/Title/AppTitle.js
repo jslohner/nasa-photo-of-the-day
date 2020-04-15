@@ -1,7 +1,7 @@
 import React from 'react';
 import './Title.css';
 
-const AppTitle = () => {
+export default function AppTitle() {
 	return (
 		<div className='title-container'>
 			<h1 className='nasa'>
@@ -11,5 +11,3 @@ const AppTitle = () => {
 		</div>
 	);
 }
-
-export default AppTitle;
