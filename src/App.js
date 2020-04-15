@@ -1,29 +1,35 @@
-import React, { useEffect } from "react";
-import "./App.css";
+import React, { useState, useEffect } from 'react';
+import './App.css';
 import axios from 'axios';
+import AppTitle from './components/Title/AppTitle.js';
+// import PhotoSection from './components/PhotoSection/PhotoSectionContainer.js';
+// import Explanation from './components/Explanation/ExplanationTextContainer.js';
+// import Search from './components/SearchBar/Search.js';
 
 function App() {
 
-  useEffect(() => {
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-      .then(r => {
-        console.log(r);
-      })
-      .catch(e => {
-        console.log('error');
-      })
-  }, [])
+	// const [photoData, setPhotoData] = useState(null);
+	//
+	// useEffect(() => {
+	// 	axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+	// 	.then(res => {
+	// 		setPhotoData(res.data);
+	// 	})
+	// 	.catch(err => {
+	// 		console.log('error');
+	// 	})
+	// }, []);
+	//
+	// console.log(photoData);
 
-
-
-  return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
-    </div>
-  );
+	return (
+	<div className='App'>
+		<AppTitle />
+		{/*<PhotoSection photoData={photoData}/>
+		<Explanation photoData={photoData}/>
+		<Search />*/}
+	</div>
+	);
 }
 
 export default App;
