@@ -1,0 +1,13 @@
+.title-container {
+	/* font-size: 50px; */
+	background-color: blue;
+	width: 60%;
+	padding: 1%;
+	margin: 0 auto;
+}
+
+.nasa a{
+	font-size: 60px;
+	color: black;
+	text-decoration: none;
+}
