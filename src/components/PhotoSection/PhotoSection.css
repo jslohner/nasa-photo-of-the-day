@@ -1,0 +1,8 @@
+.photo {
+	margin: 0 auto;
+}
+
+div.photo-section {
+	display: flex;
+	flex-flow: column wrap;
+}
