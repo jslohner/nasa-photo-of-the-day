@@ -6,3 +6,30 @@ div.photo-section {
 	display: flex;
 	flex-flow: column wrap;
 }
+
+div.photo-text-section-container {
+	display: flex;
+	justify-content: space-evenly;
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 50%;
+}
+
+div.photo-text-section-container div {
+	padding: 2%;
+}
+
+div.picture-buttons {
+	display: flex;
+	flex-flow: row nowrap;
+	margin: 0 auto;
+	width: 50%;
+	justify-content: space-evenly;
+}
+
+div.picture-buttons .button {
+	font-size: 80%;
+	height: 5vh;
+	width: 100%;
+	margin: 1% 0% 1%;
+}
