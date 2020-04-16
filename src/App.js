@@ -9,6 +9,7 @@ import Search from './components/SearchBar/Search.js';
 function App() {
 
 	const [photoData, setPhotoData] = useState(null);
+	const [searchTerm, setSearchTerm] = useState('');
 
 	useEffect(() => {
 		axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
@@ -31,7 +32,7 @@ function App() {
 		<AppTitle />
 		<PhotoSection photoData={photoData}/>
 		<Explanation photoData={photoData}/>
-		<Search />
+		<Search searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
 	</div>
 	);
 }
