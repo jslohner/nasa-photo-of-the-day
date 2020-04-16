@@ -10,12 +10,11 @@ export default function PhotoSection(props) {
 	const [title, setTitle] = useState(props.photoData.title);
 	const [copyright, setCopyright] = useState(props.photoData.copyright);
 	const [date, setDate] = useState(props.photoData.date);
-	console.log(props.photoData);
 
 	return (
 		<div className='photo-section-container'>
 			<Photo photo={photo} setPhoto={setPhoto} photoButton={photoButton} setPhotoButton={setPhotoButton} hdurl={props.photoData.hdurl} url={props.photoData.url}/>
-			{/*<PhotoText />*/}
+			<PhotoText title={title} setTitle={setTitle} copyright={copyright} setCopyright={setCopyright} date={date} setDate={setDate}/>
 		</div>
 	);
 }
