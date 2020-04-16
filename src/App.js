@@ -4,7 +4,7 @@ import axios from 'axios';
 import AppTitle from './components/Title/AppTitle.js';
 import PhotoSection from './components/PhotoSection/PhotoSectionContainer.js';
 import Explanation from './components/Explanation/ExplanationTextContainer.js';
-// import Search from './components/SearchBar/Search.js';
+import Search from './components/SearchBar/Search.js';
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
 		<AppTitle />
 		<PhotoSection photoData={photoData}/>
 		<Explanation photoData={photoData}/>
-		{/*<Search />*/}
+		<Search />
 	</div>
 	);
 }
