@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import AppStyle from './AppStyle.jsx';
 import axios from 'axios';
 import AppTitle from './components/Title/AppTitle.js';
 import PhotoSection from './components/PhotoSection/PhotoSectionContainer.js';
@@ -29,12 +29,12 @@ function App() {
 	// }
 
 	return (
-	<div className='App'>
+	<AppStyle>
 		<AppTitle />
 		{/* <PhotoSection photoData={photoData}/> */}
 		{/* <Explanation photoData={photoData}/> */}
 		<Search links={links} setLinks={setLinks} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-	</div>
+	</AppStyle>
 	);
 }
 
