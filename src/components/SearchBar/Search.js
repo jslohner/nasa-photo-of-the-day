@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './SearchBar.css';
+import SearchBarStyle from './SearchBarStyle.jsx';
 import axios from 'axios';
 
 export default function SearchBar(props) {
@@ -48,10 +48,10 @@ export default function SearchBar(props) {
 	}
 
 	return (
-		<div className='search-bar'>
-			<form className='search-form' onSubmit={submitHandler}>
+		<SearchBarStyle>
+			<form onSubmit={submitHandler}>
 				<input type='text' placeholder='Search' onChange={changeHandler}/>
 			</form>
-		</div>
+		</SearchBarStyle>
 	);
 }
