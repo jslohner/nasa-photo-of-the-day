@@ -1,4 +1,5 @@
 import React from 'react';
+import './PhotoSection.css';
 
 export default function PhotoText(props) {
 	return (

@@ -1,4 +1,5 @@
 import React from 'react';
+import './Explanation.css';
 
 export default function Explanation(props) {
 	return (
