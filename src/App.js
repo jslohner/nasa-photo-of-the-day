@@ -3,22 +3,22 @@ import './App.css';
 import axios from 'axios';
 import AppTitle from './components/Title/AppTitle.js';
 import PhotoSection from './components/PhotoSection/PhotoSectionContainer.js';
-// import Explanation from './components/Explanation/ExplanationTextContainer.js';
+import Explanation from './components/Explanation/ExplanationTextContainer.js';
 // import Search from './components/SearchBar/Search.js';
 
 function App() {
 
 	const [photoData, setPhotoData] = useState(null);
 
-	// useEffect(() => {
-	// 	axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
-	// 	.then(res => {
-	// 		setPhotoData(res.data);
-	// 	})
-	// 	.catch(err => {
-	// 		console.log('error');
-	// 	})
-	// }, []);
+	useEffect(() => {
+		axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
+		.then(res => {
+			setPhotoData(res.data);
+		})
+		.catch(err => {
+			console.log('error');
+		})
+	}, []);
 
 	if(!photoData) {
 		return (
@@ -30,8 +30,8 @@ function App() {
 	<div className='App'>
 		<AppTitle />
 		<PhotoSection photoData={photoData}/>
-		{/*<Explanation photoData={photoData}/>
-		<Search />*/}
+		<Explanation photoData={photoData}/>
+		{/*<Search />*/}
 	</div>
 	);
 }
