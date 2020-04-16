@@ -17,8 +17,10 @@ export default function Photo(props) {
 	return (
 		<div className='photo-section'>
 			<img className='photo' src={props.photo} alt='see explanation for the NASA APOD'/>
-			<button onClick={buttonHandler} className='button'>High Resolution Picture</button>
-			<button onClick={buttonHandler} className='button'>Low Resolution Picture</button>
+			<div className='picture-buttons'>
+				<button onClick={buttonHandler} className='button'>High Resolution Picture</button>
+				<button onClick={buttonHandler} className='button'>Low Resolution Picture</button>
+			</div>
 		</div>
 	);
 }
