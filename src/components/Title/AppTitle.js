@@ -1,13 +1,13 @@
 import React from 'react';
-import './Title.css';
+import AppTitleStyle from './TitleStyle.jsx';
 
 export default function AppTitle() {
 	return (
-		<div className='title-container'>
-			<h1 className='nasa'>
+		<AppTitleStyle>
+			<h1>
 				<a href='https://www.nasa.gov/'>NASA</a>
 			</h1>
-			<h2 className='apod'>Astronomy Photo Of The Day</h2>
-		</div>
+			<h2>Astronomy Photo Of The Day</h2>
+		</AppTitleStyle>
 	);
 }
