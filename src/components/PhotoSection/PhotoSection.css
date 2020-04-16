@@ -45,4 +45,6 @@ div.picture-buttons .button {
 	height: 5vh;
 	width: 100%;
 	margin: 1% 0% 1%;
+	outline: none;
+	border-radius: 8px;
 }
