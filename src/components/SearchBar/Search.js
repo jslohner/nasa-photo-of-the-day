@@ -35,7 +35,7 @@ export default function SearchBar(props) {
 	const submitHandler = event => {
 		Object.keys(props.links).forEach(linkText => {
 			if(linkText.toString().includes(props.searchTerm)) {
-				console.log(props.links[linkText]);
+				console.log(`${linkText} --- ${props.links[linkText]}`);
 			}
 		})
 		event.preventDefault();
