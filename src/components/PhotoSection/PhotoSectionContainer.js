@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './PhotoSection.css';
+import PhotoSectionContainerStyle from './PhotoSectionContainerStyle.jsx';
 import Photo from './Photo.js';
 import PhotoText from './PhotoTextContent.js';
 
@@ -12,9 +12,9 @@ export default function PhotoSection(props) {
 	const [date, setDate] = useState(props.photoData.date);
 
 	return (
-		<div className='photo-section-container'>
+		<PhotoSectionContainerStyle>
 			<Photo photo={photo} setPhoto={setPhoto} photoButton={photoButton} setPhotoButton={setPhotoButton} hdurl={props.photoData.hdurl} url={props.photoData.url}/>
 			<PhotoText title={title} setTitle={setTitle} copyright={copyright} setCopyright={setCopyright} date={date} setDate={setDate}/>
-		</div>
+		</PhotoSectionContainerStyle>
 	);
 }
