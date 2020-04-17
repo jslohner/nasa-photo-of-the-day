@@ -1,5 +1,5 @@
 import React from 'react';
-import TextContentStyle from './TextContentStyle.jsx';
+import TextContentStyle from './PhotoSectionStyleFiles/TextContentStyle.jsx';
 
 export default function PhotoText(props) {
 	return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PhotoSectionContainerStyle from './PhotoSectionContainerStyle.jsx';
+import PhotoSectionContainerStyle from './PhotoSectionStyleFiles/PhotoSectionContainerStyle.jsx';
 import Photo from './Photo.js';
 import PhotoText from './PhotoTextContent.js';
 
