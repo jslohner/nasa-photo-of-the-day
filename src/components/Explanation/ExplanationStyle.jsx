@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ExplanationStyle = styled.div`
-	width: 60%;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 1%;
 	margin-bottom: 1%;

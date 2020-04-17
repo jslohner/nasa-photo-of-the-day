@@ -49,6 +49,7 @@ export default function SearchBar(props) {
 
 	return (
 		<SearchBarStyle>
+			<p>Type in a date (eg: 2020 January 01)</p>
 			<form onSubmit={submitHandler}>
 				<input type='text' placeholder='Search' onChange={changeHandler}/>
 			</form>

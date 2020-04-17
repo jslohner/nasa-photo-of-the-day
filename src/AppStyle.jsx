@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+// import img from './components/Assets/images/test1.jpg';
 
 const AppStyle = styled.div`
 	text-align: center;
-	${'' /* background-image:  */}
+	${'' /* background-image: url(${img}); */}
 
 	.App-header {
 		background-color: #282c34;
