@@ -1,11 +1,11 @@
 import React from 'react';
-import './Explanation.css';
+import ExplanationStyle from './ExplanationStyle.jsx';
 
 export default function Explanation(props) {
 	return (
-		<div className='explanation-container'>
-			<h3 className='explanation-title'>Explanation</h3>
-			<p className='explanation-text'>{props.photoData.explanation}</p>
-		</div>
+		<ExplanationStyle>
+			<h3>Explanation</h3>
+			<p>{props.photoData.explanation}</p>
+		</ExplanationStyle>
 	);
 }
